@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://343tebq6qcv7"]
+[gd_scene load_steps=5 format=3 uid="uid://casoj2ar7emme"]
 
-[ext_resource type="Texture2D" uid="uid://d3ohche18hawt" path="res://assets/UI/backgroundwithmenu.png" id="1_id630"]
-[ext_resource type="Texture2D" uid="uid://cyluwsl54i1gr" path="res://assets/UI/logo.png" id="2_uhj5q"]
-[ext_resource type="FontFile" uid="uid://bbjgenm5d3ut2" path="res://assets/UI/Fredoka-Bold.ttf" id="3_iaoho"]
+[ext_resource type="Texture2D" uid="uid://d3ohche18hawt" path="res://assets/UI/backgroundwithmenu.png" id="1_6xjim"]
+[ext_resource type="Texture2D" uid="uid://cyluwsl54i1gr" path="res://assets/UI/logo.png" id="2_o0mhl"]
+[ext_resource type="FontFile" uid="uid://bbjgenm5d3ut2" path="res://assets/UI/Fredoka-Bold.ttf" id="3_hkosk"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_id630"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64dyj"]
 bg_color = Color(0.65882355, 0.84705883, 0.91764706, 0.5882353)
 border_width_left = 5
 border_width_top = 5
@@ -15,7 +15,7 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
-expand_margin_bottom = 150.0
+expand_margin_bottom = 200.0
 
 [node name="LoadGame" type="Control"]
 layout_mode = 3
@@ -31,7 +31,7 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_bottom = -2.0
-texture = ExtResource("1_id630")
+texture = ExtResource("1_6xjim")
 
 [node name="TextureRect" type="TextureRect" parent="TextureRect"]
 layout_mode = 1
@@ -44,7 +44,7 @@ offset_left = 0.41599846
 offset_top = 0.20799255
 offset_right = 0.18395996
 offset_bottom = -0.024017334
-texture = ExtResource("2_uhj5q")
+texture = ExtResource("2_o0mhl")
 expand_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
@@ -60,7 +60,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_iaoho")
+theme_override_fonts/font = ExtResource("3_hkosk")
 theme_override_font_sizes/font_size = 50
 text = "NEW GAME"
 flat = true
@@ -70,7 +70,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_iaoho")
+theme_override_fonts/font = ExtResource("3_hkosk")
 theme_override_font_sizes/font_size = 50
 text = "SETTINGS"
 flat = true
@@ -80,54 +80,10 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_iaoho")
+theme_override_fonts/font = ExtResource("3_hkosk")
 theme_override_font_sizes/font_size = 50
 text = "RETURN"
 flat = true
-
-[node name="MaleBox" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 495.0
-offset_top = 120.0
-offset_right = 745.0
-offset_bottom = 320.0
-
-[node name="PanelContainer" type="PanelContainer" parent="MaleBox"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_id630")
-
-[node name="MaleBox2" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 800.0
-offset_top = 120.0
-offset_right = 1050.0
-offset_bottom = 320.0
-
-[node name="PanelContainer" type="PanelContainer" parent="MaleBox2"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_id630")
-
-[node name="MaleBox3" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 495.0
-offset_top = 370.0
-offset_right = 745.0
-offset_bottom = 570.0
-
-[node name="PanelContainer" type="PanelContainer" parent="MaleBox3"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_id630")
-
-[node name="MaleBox4" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 800.0
-offset_top = 370.0
-offset_right = 1050.0
-offset_bottom = 570.0
-
-[node name="PanelContainer" type="PanelContainer" parent="MaleBox4"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_id630")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -145,7 +101,51 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_iaoho")
+theme_override_fonts/font = ExtResource("3_hkosk")
 theme_override_font_sizes/font_size = 40
 text = "LOAD GAME"
 flat = true
+
+[node name="MaleBox" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 120.0
+offset_right = 745.0
+offset_bottom = 320.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MaleBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_64dyj")
+
+[node name="MaleBox2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 120.0
+offset_right = 1050.0
+offset_bottom = 320.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MaleBox2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_64dyj")
+
+[node name="MaleBox3" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 370.0
+offset_right = 745.0
+offset_bottom = 570.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MaleBox3"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_64dyj")
+
+[node name="MaleBox4" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 370.0
+offset_right = 1050.0
+offset_bottom = 570.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MaleBox4"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_64dyj")
