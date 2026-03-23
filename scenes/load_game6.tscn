@@ -1,21 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dlopkr5kuvrel"]
+[gd_scene load_steps=8 format=3 uid="uid://bt6qwjosxdpxh"]
 
-[ext_resource type="Texture2D" uid="uid://d3ohche18hawt" path="res://assets/UI/backgroundwithmenu.png" id="1_cy3qq"]
-[ext_resource type="Script" uid="uid://dd1rvxx87igsv" path="res://scenes/load_game2.gd" id="1_er34q"]
-[ext_resource type="Texture2D" uid="uid://cyluwsl54i1gr" path="res://assets/UI/logo.png" id="2_xq8aa"]
-[ext_resource type="FontFile" uid="uid://bbjgenm5d3ut2" path="res://assets/UI/Fredoka-Bold.ttf" id="3_t1j57"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0cfd"]
-bg_color = Color(0.65882355, 0.84705883, 0.9411765, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
+[ext_resource type="Texture2D" uid="uid://d3ohche18hawt" path="res://assets/UI/backgroundwithmenu.png" id="1_0me26"]
+[ext_resource type="Script" uid="uid://bbkj0xlysq1q8" path="res://scenes/load_game_6.gd" id="1_h1sfi"]
+[ext_resource type="Texture2D" uid="uid://cyluwsl54i1gr" path="res://assets/UI/logo.png" id="2_mssuw"]
+[ext_resource type="FontFile" uid="uid://bbjgenm5d3ut2" path="res://assets/UI/Fredoka-Bold.ttf" id="3_edxto"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mrljo"]
 bg_color = Color(0.16078432, 0.67058825, 0.8862745, 1)
@@ -33,7 +21,19 @@ expand_margin_top = 2.0
 expand_margin_right = 2.0
 expand_margin_bottom = 2.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1uog"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0cfd"]
+bg_color = Color(0.65882355, 0.84705883, 0.9411765, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xjim"]
 bg_color = Color(0.65882355, 0.84705883, 0.9411765, 0.7058824)
 border_width_left = 5
 border_width_top = 5
@@ -52,7 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_er34q")
+script = ExtResource("1_h1sfi")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -60,7 +60,7 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_bottom = -2.0
-texture = ExtResource("1_cy3qq")
+texture = ExtResource("1_0me26")
 
 [node name="TextureRect" type="TextureRect" parent="TextureRect"]
 layout_mode = 1
@@ -73,7 +73,7 @@ offset_left = 0.41599846
 offset_top = 0.20799255
 offset_right = 0.18395996
 offset_bottom = -0.024017334
-texture = ExtResource("2_xq8aa")
+texture = ExtResource("2_mssuw")
 expand_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
@@ -89,7 +89,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_t1j57")
+theme_override_fonts/font = ExtResource("3_edxto")
 theme_override_font_sizes/font_size = 50
 text = "NEW GAME"
 flat = true
@@ -99,7 +99,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_t1j57")
+theme_override_fonts/font = ExtResource("3_edxto")
 theme_override_font_sizes/font_size = 50
 text = "SETTINGS"
 flat = true
@@ -109,7 +109,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_t1j57")
+theme_override_fonts/font = ExtResource("3_edxto")
 theme_override_font_sizes/font_size = 50
 text = "RETURN"
 flat = true
@@ -125,34 +125,18 @@ offset_bottom = 94.0
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("3_t1j57")
+theme_override_fonts/font = ExtResource("3_edxto")
 theme_override_font_sizes/font_size = 50
 text = "LOAD GAME"
 
 [node name="PageNumbers" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 580.0
+offset_left = 900.0
 offset_top = 560.0
-offset_right = 620.0
+offset_right = 940.0
 offset_bottom = 600.0
 
-[node name="Button1" type="Button" parent="PageNumbers"]
-custom_minimum_size = Vector2(40, 40)
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_n0cfd")
-text = "1"
-
-[node name="PageNumbers2" type="HBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 645.0
-offset_top = 560.0
-offset_right = 685.0
-offset_bottom = 600.0
-
-[node name="MainButton" type="Button" parent="PageNumbers2"]
+[node name="MainButton" type="Button" parent="PageNumbers"]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -162,6 +146,22 @@ theme_override_constants/h_separation = 10
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_mrljo")
 action_mode = 0
+text = "6"
+
+[node name="PageNumbers2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 645.0
+offset_top = 560.0
+offset_right = 685.0
+offset_bottom = 600.0
+
+[node name="Button2" type="Button" parent="PageNumbers2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_n0cfd")
 text = "2"
 
 [node name="PageNumbers3" type="HBoxContainer" parent="."]
@@ -214,19 +214,19 @@ text = "5"
 
 [node name="PageNumbers6" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 900.0
+offset_left = 580.0
 offset_top = 560.0
-offset_right = 940.0
+offset_right = 620.0
 offset_bottom = 600.0
 
-[node name="Button6" type="Button" parent="PageNumbers6"]
+[node name="Button1" type="Button" parent="PageNumbers6"]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_n0cfd")
-text = "6"
+text = "1"
 
 [node name="LoadGame1" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -238,7 +238,7 @@ offset_bottom = 300.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame1"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [node name="LoadGame2" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -250,7 +250,7 @@ offset_bottom = 300.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame2"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [node name="LoadGame3" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -262,7 +262,7 @@ offset_bottom = 450.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame3"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [node name="LoadGame4" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -274,7 +274,7 @@ offset_bottom = 450.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame4"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [node name="LoadGame5" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -286,7 +286,7 @@ offset_bottom = 600.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame5"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [node name="LoadGame6" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -298,13 +298,13 @@ offset_bottom = 600.0
 [node name="LoadGameBox1" type="PanelContainer" parent="LoadGame6"]
 custom_minimum_size = Vector2(240, 140)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xjim")
 
 [connection signal="pressed" from="TextureRect/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="PageNumbers/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="PageNumbers2/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="PageNumbers3/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="PageNumbers4/Button4" to="." method="_on_button_4_pressed"]
 [connection signal="pressed" from="PageNumbers5/Button5" to="." method="_on_button_5_pressed"]
-[connection signal="pressed" from="PageNumbers6/Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="PageNumbers6/Button1" to="." method="_on_button_1_pressed"]
