@@ -101,7 +101,7 @@ theme_override_font_sizes/font_size = 50
 text = "SETTINGS"
 flat = true
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="Return" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
@@ -164,6 +164,6 @@ text = "FEMALE"
 
 [connection signal="pressed" from="VBoxContainer/LoadGame" to="." method="_on_load_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Return" to="." method="_on_return_pressed"]
 [connection signal="pressed" from="MaleBox/MaleButton" to="." method="_on_male_button_pressed"]
 [connection signal="pressed" from="FemaleBox/FemaleButton" to="." method="_on_female_button_pressed"]

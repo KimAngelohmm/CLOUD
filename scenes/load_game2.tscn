@@ -104,7 +104,7 @@ theme_override_font_sizes/font_size = 50
 text = "SETTINGS"
 flat = true
 
-[node name="Quit" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Return" type="Button" parent="TextureRect/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.35686275, 0.72156864, 0.83137256, 1)
@@ -302,7 +302,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_e1uog")
 
 [connection signal="pressed" from="TextureRect/VBoxContainer/NewGame" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Return" to="." method="_on_return_pressed"]
 [connection signal="pressed" from="PageNumbers/Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="PageNumbers3/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="PageNumbers4/Button4" to="." method="_on_button_4_pressed"]

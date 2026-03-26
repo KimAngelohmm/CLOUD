@@ -41,3 +41,7 @@ func _on_button_4_pressed() -> void:
 
 func _on_button_5_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/load_game5.tscn")
+
+
+func _on_return_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
